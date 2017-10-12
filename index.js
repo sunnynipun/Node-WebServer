@@ -11,6 +11,10 @@ app.get('/',(req,res)=>{
   });
 });
 
+app.get('/project',(req,res)=>{
+  res.render(project.hbs);
+})
+
 app.get('/bad',(req,res)=>{
   res.send('<h1>laude</h1>');
 });
